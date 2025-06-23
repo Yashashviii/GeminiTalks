@@ -1,7 +1,7 @@
 <h1 align="center">🚀 GeminiTalks</h1>
 
 <p align="center">
-An intelligent and interactive chatbot built with **Node.js** and **Google Gemini**, allowing users to ask questions and receive real-time, conversational responses in a sleek web interface.
+An intelligent and interactive chatbot built with Node.js and Google Gemini, allowing users to ask questions and receive real-time, conversational responses in a sleek web interface.
 </p>
 
 <p align="center">
@@ -99,6 +99,6 @@ Then open http://localhost:3000 in your browser.
 Pull requests are welcome! Please fork the repo and submit your ideas or improvements.
 
 <p align="center">
-  ✨ Made with ❤️ using using modern web technologies ✨
+  ✨ Made with ❤️ using modern web technologies ✨
 </p>
 
