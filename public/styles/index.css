@@ -1,0 +1,93 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
+  height: auto; /* let height expand */
+  overflow-y: auto; /* enable vertical scroll */
+  overflow-x: hidden;
+}
+
+/* body styling */
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: rgb(37, 36, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* title styling */
+h1 {
+  color: white;
+  font-weight: 200;
+}
+
+/* Form styling */
+form {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input styling */
+input {
+  background-color: #333333;
+  color: white;
+  width: 40%;
+  padding: 1.7%;
+
+  border-radius: 1em;
+  border: none;
+  outline: none;
+
+  /* Makes the cursor color white */
+  caret-color: rgb(151, 143, 143);
+}
+
+/* Increase the font size of placeholder */
+input::placeholder {
+  font-size: larger;
+}
+
+/* Submit button styling */
+button {
+  height: 2.8em;
+  width: 2.8em;
+  border-radius: 50%;
+  background-color: rgb(246, 240, 240);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  font-size: larger;
+}
+
+/* Styling the content area  */
+
+.content {
+  background-color: #2b2929;
+  color: white;
+  padding: 1.5em;
+  border-radius: 1em;
+  width: 50em;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Styling outer div of content area */
+.chat {
+  position: relative;
+  margin-left: auto;
+  margin: 3% auto 3% auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border-radius: 1em;
+}

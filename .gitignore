@@ -1,0 +1,22 @@
+# Node modules (dependencies)
+node_modules/
+
+# Environment variables (API keys, etc.)
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
+# Build output or cache (if added in the future)
+dist/
+build/
+.cache/

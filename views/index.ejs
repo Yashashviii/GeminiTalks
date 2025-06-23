@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>GeminiTalks</title>
+  </head>
+  <body>
+    <h1><%= random %></h1>
+    <br />
+    <form action="/submit" method="POST">
+      <input
+        type="text"
+        name="userInput"
+        placeholder="Ask anything"
+        autofocus="true"
+        autocomplete="off"
+        required
+      />
+      <button value="submit">➜</button>
+    </form>
+
+    <!-- Show the response area when user inputs something -->
+
+    <div class="chat">
+      <div class="response-area content"><%= content %></div>
+    </div>
+
+    <script>
+      const responseBoxes = document.getElementsByClassName("response-area");
+      const content = "<%= content %>";
+
+      Array.from(responseBoxes).forEach((responseBox) => {
+        responseBox.style.display = content.trim() === "" ? "none" : "block";
+      });
+    </script>
+
+    <script src="../src/index.js" type="application/json"></script>
+  </body>
+</html>
